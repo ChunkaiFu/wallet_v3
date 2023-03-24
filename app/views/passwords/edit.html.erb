@@ -1,6 +1,6 @@
 <h1> Edit Password </h1>
 
-<%= form_with model: Current.user, url: edit_password_path, data: { turbo: false } do |form| %>
+<%= form_with model: Current.user, url: edit_password_path do |form| %>
     <% if Current.user.errors.any? %>
         <div class="alert alert-danger">
             <% Current.user.errors.full_messages.each do |message| %>
