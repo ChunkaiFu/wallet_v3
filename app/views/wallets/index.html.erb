@@ -1,0 +1,25 @@
+<div class="container">
+  <h1>Cash</h1>
+  <div class="card">
+    <div class="card-body">
+      <p class="card-text">Balance: <%= @wallet.balance %></p>
+      <p class="card-text">Currency: <%= @wallet.currency %></p>
+    </div>
+  </div>
+</div>
+
+
+<div class = "container">
+  <h1> My Cards </h1>
+  <% @cards. each do |card| %>
+    <div class="card">
+      <div class="card-header"> card.issuer </div>
+      <div class="card-body">
+        <h5 class="card-title"> 6225 7225 8695 1233</h5>
+        <p class="card-text">Citi credit card </p>
+        <%= link_to "Select", root_path, class: "btn btn-primary" %>
+      </div>
+    </div>
+  <% end %>
+</div>
+
